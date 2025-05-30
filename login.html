@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сторінка авторизації для доступу до облікового запису Rockstar Games.">
+    <meta name="keywords" content="Rockstar Games, авторизація, вхід, логін, обліковий запис">
+    <meta name="author" content="Your Name or Rockstar Games">
+    <title>Rockstar Games - Вхід</title>
+    <link rel="stylesheet" href="css.css"> <link rel="stylesheet" href="login.css"> </head>
+<body>
+    <header class="main-header">
+        <nav class="glav-logo">
+            <div class="logo1">
+                <img src="ing/c46845952588bf44125a37117d4da32c.png" alt="Rockstar Games Logo" width="50" height="50">
+                
+            </div>
+            <div class="logo-nav">
+                <div>Games</div>
+                <div>Newswire</div>
+                <div>Videos</div>
+                <div>Downloads</div>
+                <div>Store</div>
+                <div>Support</div>
+            </div>
+            <div class="get">GET LAUNCHER</div>
+            <div class="search">
+                <img src="ing/902006563577748c7d58ac9c2bf5e6df.png" width="50" height="50" alt="Search">
+            </div>
+            <div class="user">
+                <img src="ing/a29e26aa160e7be7e845708c335b3c39.png" width="50" height="50" alt="User">
+            </div>
+        </nav>
+    </header>
+
+    <main class="login-modal">
+        <form class="login-form" onsubmit="return handleLogin(event)">
+            <h2>Login to your Rockstar Games account</h2>
+            <label for="username">Username or Email:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit" class="LEARN">Login</button> <a href="#" class="forgot-password">Forgot Password?</a>
+            <p class="signup-text">Don't have an account? <a href="#" class="signup-link">Sign Up Now</a></p>
+        </form>
+    </main>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); 
+            alert('Login attempt!'); 
+            return false; 
+        }
+    </script>
+</body>
+</html>
