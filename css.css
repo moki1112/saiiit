@@ -1,214 +1,280 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #111;
-    color: white;
-    display: flex;
-    justify-content: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
-/* Header Section */
 .main-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Навигация */
 .glav-logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 10px 20px;
-    box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .logo1 img,
 .search img,
 .user img {
-    display: block;
-    padding: 5px 10px;
+  display: block;
+  padding: 5px 10px;
 }
 
 .logo-nav {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-grow: 1;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
 }
 
 .get {
-    margin-left: auto;
-    margin-right: 20px;
-    cursor: pointer;
-    background-color: #edff28;
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: #edff28;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 /* Баннер */
 .global-banner {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    width: 100%; 
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .banner img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
 }
 
 .banner1 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 10px;
-    padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px 20px;
 }
 
 .LEARN {
-    background-color: rgb(255, 230, 0); 
-    color: black; 
-    border: 2px solid rgb(255, 230, 0);
-    margin-top: 15px;
-    padding: 10px 20px;
-    cursor: pointer;
+  background-color: rgb(255, 230, 0);
+  color: black;
+  border: 2px solid rgb(255, 230, 0);
+  margin-top: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-
+/* Новости */
 .newswire-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.text1 {
-    width: 88%;
-    text-align: left;
-    padding: 0 45px;
-    box-sizing: border-box; 
+.text1,
+.text2 {
+  width: 88%;
+  text-align: left;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .banner2 {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    width: 100%;
-    padding: 10px 20px;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
 
-.banner21, .banner20 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; 
-    gap: 20px;
-    padding: 25px 0; 
-    width: 100%;
+.banner21,
+.banner20 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 25px 0;
+  width: 100%;
 }
 
 .news-item {
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .news-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px; 
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
 }
 
 .news-item span {
-    margin-top: 10px; 
-    font-weight: bold; 
+  margin-top: 10px;
+  font-weight: bold;
 }
 
-
+/* Игровая витрина */
 .game-showcase {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-game-image {
-    width: 1100px; 
-    height: 350px; 
-    padding: 35px 10px;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  padding: 20px 10px;
+  box-sizing: border-box;
 }
 
 .main-game-image img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    border-radius: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
 }
 
 .banner31 {
-    width: 100%;
-    display: flex;
-    justify-content: center; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .banner31 > div {
-    display: flex;
-    gap: 35px;
-    flex-wrap: wrap; 
-    justify-content: center; 
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .banner31 img {
-    border-radius: 10px; 
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
 .site-footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px; 
-}
-
-.text2 {
-    width: 88%;
-    text-align: left;
-    padding: 0 45px;
-    box-sizing: border-box; 
-    margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
 }
 
 .subscribe-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .logo21 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    border-radius: 10px;
-    padding: 25px 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 10px;
+  padding: 25px;
+  flex-wrap: wrap;
 }
 
 .subscribe-text h2,
 .subscribe-text h4 {
-    margin: 5px 0;
+  margin: 5px 0;
+}
+
+/* 🔥 Медиазапросы для адаптивности */
+@media (max-width: 1024px) {
+  .main-game-image {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .glav-logo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-nav {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .get {
+    margin: 10px 0;
+  }
+
+  .banner1 {
+    padding: 10px;
+  }
+
+  .text1,
+  .text2 {
+    padding: 0 10px;
+  }
+
+  .news-item {
+    width: 90%;
+  }
+
+  .logo21 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .glav-logo {
+    align-items: center;
+  }
+
+  .get {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner1,
+  .banner2,
+  .banner21,
+  .banner20 {
+    padding: 10px;
+  }
+
+  .text1,
+  .text2 {
+    width: 100%;
+  }
 }
